@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <books>
-    <book>
-        <id>1001</id>
+    <book id="1001">
         <name>Thinking In Java</name>
         <price>80.00</price>
     </book>
-    <book>
-        <id>1002</id>
+    <book id="1002">
         <name>Core Java</name>
         <price>90.00</price>
     </book>
-    <book>
-        <id>1003</id>
+    <book id="1003">
         <name>Hello, Andriod</name>
         <price>100.00</price>
     </book>

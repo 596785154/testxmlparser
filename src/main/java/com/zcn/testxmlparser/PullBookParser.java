@@ -35,9 +35,7 @@ public class PullBookParser implements BookParser {
                 case XmlPullParser.START_TAG:
                     if (parser.getName().equals("book")) {
                         book = new Book();
-                    } else if (parser.getName().equals("id")) {
-                        eventType = parser.next();
-                        book.setId(Integer.parseInt(parser.getText()));
+                        book.setId(Integer.parseInt(parser.getAttributeValue(null, "id")));
                     } else if (parser.getName().equals("name")) {
                         eventType = parser.next();
                         book.setName(parser.getText());
